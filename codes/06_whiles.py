@@ -1,9 +1,9 @@
 first = 5
 
 while first > 0 :
-    print("while 값 : ",first)
+    print("while 값 : "+str(first))
     if first == 3 :
-        print("continue 실행")
+        print("break 실행")
         break
     first = first - 1
 
