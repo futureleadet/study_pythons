@@ -8,6 +8,7 @@ second = 6
 
 first = int(input("input first number: "))
 second = int(input("input second number: "))
+
 if first >= second :
     print("babo")
     print("it's me!")
