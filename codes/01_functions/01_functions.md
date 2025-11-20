@@ -55,5 +55,34 @@ for i in range(10):
     "곱셈 (num1 * num2)",
     "나눗셈 (num1 / num2) 또는 0으로 나눌 경우 'division_error' 반환"
   ],
-  "code_solution": "def calculate_all(num1, num2):\n    # 덧셈\n    add_result = num1 + num2\n    # 뺄셈\n    sub_result = num1 - num2\n    # 곱셈\n    mul_result = num1 * num2\n    \n    # 나눗셈 (0으로 나누는 경우 처리)\n    if num2 == 0:\n        div_result = \"division_error\"\n    else:\n        div_result = num1 / num2\n        \n    # 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 튜플로 반환\n    return (add_result, sub_result, mul_result, div_result)\n\n# 테스트 리스트 (10개)\ntest_a = [10, 25, 40, 12, 7, 9, 16, 100, 3, 81]\ntest_b = [5, 5, 8, 3, 0, 3, 2, 4, 9, 9]\n\n# 테스트 실행\nprint(\"num1, num2 => (덧셈, 뺄셈, 곱셈, 나눗셈)\")\nprint(\"-------------------------------------------\")\nfor i in range(10):\n    a = test_a[i]\n    b = test_b[i]\n    result = calculate_all(a, b)\n    print(f\"{a}, {b} => {result}\")\n\n# 예상 출력 예시: \n# 7, 0 => (7, 7, 0, 'division_error')\n# 10, 5 => (15, 5, 50, 2.0)"
+
+  "code_solution": "def calculate_all(num1, num2):\n    
+  
+  # 덧셈\n    add_result = num1 + num2\n    
+  # 뺄셈\n    sub_result = num1 - num2\n    
+  # 곱셈\n    mul_result = num1 * num2\n    
+  \n    
+  # 나눗셈 (0으로 나누는 경우 처리)\n    
+  if num2 == 0:\n
+          div_result = \"division_error\"\n    else:\n
+        div_result = num1 / num2\n
+                          \n
+        # 덧셈, 뺄셈, 곱셈, 나눗셈 결과를 튜플로 반환\n    return (add_result, sub_result, mul_result, div_result)\n\n
+                              
+        # 테스트 리스트 (10개)\n
+        test_a = [10, 25, 40, 12, 7, 9, 16, 100, 3, 81]\n
+        test_b = [5, 5, 8, 3, 0, 3, 2, 4, 9, 9]\n\n
+                              
+        # 테스트 실행\n
+        print(\"num1, num2 => (덧셈, 뺄셈, 곱셈, 나눗셈)\")\n
+        print(\"-------------------------------------------\")\n
+        for i in range(10):\n    
+        a = test_a[i]\n    
+        b = test_b[i]\n    
+        result = calculate_all(a, b)\n    
+        print(f\"{a}, {b} => {result}\")\n\n
+                              
+        # 예상 출력 예시: \n
+        # 7, 0 => (7, 7, 0, 'division_error')\n
+        # 10, 5 => (15, 5, 50, 2.0)"
 }
