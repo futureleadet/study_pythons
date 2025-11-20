@@ -1,0 +1,3 @@
+
+
+DELETE FROM persons WHERE personid = 1;
