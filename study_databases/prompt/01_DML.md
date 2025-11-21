@@ -13,15 +13,11 @@ AI에게 요청할 JSON으로 된 명령어를 만들어줘
 
 컬럼:
 
-
 id (INT, PRIMARY KEY)
-
 
 name (VARCHAR(50))
 
-
 age (INT)
-
 
 
 📌 문제 2 — CREATE (INSERT) 기초
@@ -40,18 +36,11 @@ age
 박철수
 26
 
-
 📌 문제 3 — READ (SELECT) 기본 조회
 다음 조건들을 만족하는 SELECT 쿼리를 작성하시오.
 students 테이블의 전체 데이터를 조회
-
-
 나이가 22세 이상인 학생만 조회
-
-
 name 이 “홍길동”인 학생만 조회
-
-
 
 📌 문제 4 — UPDATE 연습
 ✔ 요구사항
@@ -78,11 +67,7 @@ VALUES (1, '책 B', 15000);
 
 📌 질문:
 어떤 에러가 발생하는가?
-
-
 왜 발생하는가?
-
-
 PRIMARY KEY 의 규칙을 쓰시오.
 ```
 ## 결과 JSON
